@@ -1,1 +1,1 @@
-{username:teste:password:IAwQGyE=:hwid:BFEBFBFF000906E9:expires:25/06/2024}
+{username:teste:password:IAwQGyE=:hwid:BFEBFBFF000906E9:expires:25/09/2024}
