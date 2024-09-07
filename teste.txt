@@ -1,1 +1,1 @@
-{username:teste:password:IAwQGyE=:hwid:BFEBFBFF000906E9
+{username:teste:password:teste:hwid:BFEBFBFF000906E9
