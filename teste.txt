@@ -1,1 +1,2 @@
 {username:teste:password:IAwQGyE=:hwid:BFEBFBFF000906E9
+{username:davi:password:MAgVBg==:hwid:0000000000000000
