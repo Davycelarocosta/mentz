@@ -1,0 +1,9 @@
+@echo off
+taskkill /F /IM Everything.exe
+taskkill /F /IM ListarySvc.exe
+taskkill /F /IM UltraSearch.exe
+taskkill /F /IM Locate32.exe
+taskkill /F /IM AgentRansack.exe
+taskkill /F /IM FileLocatorLite.exe
+taskkill /F /IM recoll.exe
+exit
