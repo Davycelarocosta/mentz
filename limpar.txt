@@ -1,0 +1,48 @@
+@echo off
+setlocal
+set "FIVEM_APP_DIR=%localappdata%\fivem\fivem.app"
+
+if exist "%FIVEM_APP_DIR%\citizen" (
+    del /q /s /f "%FIVEM_APP_DIR%\citizen\*.*"
+    rmdir /s /q "%FIVEM_APP_DIR%\citizen"
+
+) else (
+
+)
+
+if exist "%FIVEM_APP_DIR%\cache" (
+    del /q /s /f "%FIVEM_APP_DIR%\cache\*.*"
+    rmdir /s /q "%FIVEM_APP_DIR%\cache"
+
+) else (
+
+)
+
+if exist "%FIVEM_APP_DIR%\logs" (
+    del /q /s /f "%FIVEM_APP_DIR%\logs\*.*"
+    rmdir /s /q "%FIVEM_APP_DIR%\logs"
+
+) else (
+
+)
+
+echo Deleting MachineGUID content...
+reg add "HKLM\SOFTWARE\Microsoft\Cryptography" /v "MachineGUID" /t REG_SZ /d "" /f
+
+echo Deleting DigitalEntitlements folder...
+if exist "%localappdata%\DigitalEntitlements" (
+    rmdir /s /q "%localappdata%\DigitalEntitlements"
+
+) else (
+
+)
+
+echo Deleting CitizenFX folder in Roaming AppData...
+if exist "%appdata%\CitizenFX" (
+    rmdir /s /q "%appdata%\CitizenFX"
+
+) else (
+
+)
+
+exit
